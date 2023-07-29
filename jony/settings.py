@@ -28,8 +28,8 @@ DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://jony-production.up.railway.app",
-    "https://irais-production.up.railway.app",
-    "https://flourishing-conkies-de9b92.netlify.app/",
+    "https://ruca-production.up.railway.app",
+    "https://rainbow-naiad-9fecd8.netlify.app",
 ]
 SITE_URL = "https://jony-production.up.railway.app"
 
@@ -97,9 +97,9 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "bvLSHnRHjS3gjZV4HdJT",
-        "HOST": "containers-us-west-154.railway.app",
-        "PORT": "6252",
+        "PASSWORD": "MHZMHBY97DTok4YCtmWN",
+        "HOST": "containers-us-west-77.railway.app",
+        "PORT": "6412",
     }
 }
 # kk
@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "es-mx"
 
 TIME_ZONE = "UTC"
 
@@ -145,3 +145,4 @@ STATIC_URL = "static/"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+# falta jalarte los cambios de aqui 

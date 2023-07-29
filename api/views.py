@@ -57,6 +57,8 @@ class DetectFace(View):
         response = requests.post(
             "https://api.kairos.com/enroll", json=payload, headers=headers
         )
+        print(image)
+        print(response)
         try:
             data = response.json()["images"][0]
             data = data.get("attributes")
