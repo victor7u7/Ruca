@@ -52,10 +52,10 @@ function App() {
       let imageFireBase = null;
       const imageBase64Size =
         calculateTextSizeInBytes(image.base64) / (1024 * 1024);
-      if (imageBase64Size > 3)
+      if (true)
         imageFireBase = await uploadFile(image.fileList[0]);
       const result = await uploadFile(videoFile);
-      const faceResult = await DetectFace(image.base64);
+      const faceResult = await DetectFace(imageFireBase );
       if (result) {
         if (faceResult) {
           axios
@@ -107,15 +107,15 @@ function App() {
         <div className="text-center p-[2rem]">
           <Toaster />
           <div className="text-5xl mb-5 font-extrabold">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-              Formulario profa Irais
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
+              Formulario Chido :D
             </span>
           </div>
           <div
             onClick={() => setPage(0)}
-            className="text-center badge badge-success mb-5 p-3 italic cursor-pointer hover:badge-secondary"
+            className="text-center badge badge-success mb-5 p-3 italic cursor-pointer hover:badge-primary bg-cyan-500"
           >
-            Ver registros
+            Ver datos
           </div>
           <form
             action=""
@@ -150,14 +150,14 @@ function App() {
                   <div className="bg-gray-800   rounded-xl p-6">
                     <div>Sube un trailer de la pelicula</div>
                     <svg
-                      viewBox="0 0 980 1000"
-                      fill="currentColor"
-                      height="1em"
-                      width="1em"
-                      className="w-20 mx-auto h-20"
-                    >
-                      <path d="M980 250H880v100h100v100H880v100h100v100H880v100h100v60c0 10.667-4 20-12 28s-17.333 12-28 12H40c-10.667 0-20-4-28-12S0 820.667 0 810v-60h100V650H0V550h100V450H0V350h100V250H0v-60c0-12 4-21.667 12-29 8-7.333 17.333-11 28-11h900c10.667 0 20 3.667 28 11s12 17 12 29v60M380 650l250-150-250-150v300" />
-                    </svg>
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      height="1em"
+      className="w-14 h-14 mx-auto"
+      width="1em"
+    >
+      <path d="M16 7l4-4v14l-4-4v3a2 2 0 01-2 2H2a2 2 0 01-2-2V4c0-1.1.9-2 2-2h12a2 2 0 012 2v3zm-8 7a4 4 0 100-8 4 4 0 000 8zm0-2a2 2 0 110-4 2 2 0 010 4z" />
+    </svg>
                     <div className="badge badge-warning">
                       {videoFile && videoFile.name.length > 0
                         ? truncateText(videoFile.name, 20)
@@ -189,16 +189,15 @@ function App() {
                   <div className="flex flex-col bg-gray-800 rounded-lg p-4 items-center gap-2">
                     <div>Sube una imagen del personaje</div>
                     <div className="">
-                      <svg
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                        height="1em"
-                        width="1em"
-                        className="w-20 h-20"
-                      >
-                        <path d="M6.002 5.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                        <path d="M1.5 2A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13zm13 1a.5.5 0 01.5.5v6l-3.775-1.947a.5.5 0 00-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 00-.63.062L1.002 12v.54A.505.505 0 011 12.5v-9a.5.5 0 01.5-.5h13z" />
-                      </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      height="1em"
+                      width="1em"
+                      className="w-20  h-20 mx-auto"
+                    >
+      <path d="M1 5h2v14H1V5m4 0h2v14H5V5m17 0H10a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1M11 17l2.5-3.15L15.29 16l2.5-3.22L21 17H11z" />
+    </svg>
                     </div>
                     <div className="badge badge-warning">
                       {image &&

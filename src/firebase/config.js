@@ -4,12 +4,13 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCdu9K04chuhYK6d4xGx5RoxPI-CQaXtV0",
-  authDomain: "react-bf382.firebaseapp.com",
-  projectId: "react-bf382",
-  storageBucket: "react-bf382.appspot.com",
-  messagingSenderId: "606540058729",
-  appId: "1:606540058729:web:ec82dbde684cdae727d2f8",
+  apiKey: "AIzaSyCSU1J-oDZmObSmxanFDkw-yWzF6EOH5-g",
+  authDomain: "formulario-irais.firebaseapp.com",
+  projectId: "formulario-irais",
+  storageBucket: "formulario-irais.appspot.com",
+  messagingSenderId: "1043130314845",
+  appId: "1:1043130314845:web:22c0c8342661b9267addb4",
+  measurementId: "G-RF1D16KMVE"
 };
 
 const app = initializeApp(firebaseConfig);

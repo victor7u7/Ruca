@@ -177,9 +177,9 @@ const Registers = ({ changeState }) => {
                         });
                         window.my_modal_2.showModal();
                       }}
-                      className="badge badge-info mt-2 cursor-pointer hover:badge-secondary"
+                      className="badge badge-info mt-2 cursor-pointer hover:badge-secondary bg-cyan-500"
                     >
-                      Mostrar
+                      VER
                     </th>
                   </tr>
                 ))}

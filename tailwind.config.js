@@ -4,9 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        penScript: ["Chilanka", " cursive"],
+        penScript: ['Raleway', 'sans-serif'],
       },
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["valentine"],
+  },
 };
